@@ -1,3 +1,36 @@
+@-webkit-keyframes roll-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +61,6 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: space-between;
   align-items: center;
 }
@@ -105,11 +137,17 @@ img {
 }
 
 .mobile-menu-link {
+  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
+  transition: 0.3s;
+}
+
+.mobile-menu-link:hover {
+  color: #f16d7f;
 }
 
 .top {
@@ -134,6 +172,7 @@ img {
 }
 
 .title {
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -259,6 +298,10 @@ img {
 .card:hover .image-card {
   filter: brightness(0.5);
   transition: 1s;
+}
+
+.card:hover .card-link {
+  animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .card-text {
@@ -454,6 +497,8 @@ img {
   border: none;
   border-radius: 25px 0 0 25px;
   padding-left: 20px;
+  padding-right: 20px;
+  border: none;
 }
 
 .input-email::placeholder {
