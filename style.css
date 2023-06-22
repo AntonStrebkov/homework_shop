@@ -565,6 +565,123 @@ img {
   transition: all 0.3s;
 }
 
+.reg {
+  background: #f8f3f4;
+}
+
+.reg-title {
+  color: #f16d7f;
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 500;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+.registration {
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+}
+
+.registration-form {
+}
+
+.reg-subtitle {
+  color: #222;
+  font-size: 16px;
+  font-family: Lato;
+  font-weight: 300;
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+
+.check-input {
+  width: 360px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 17px;
+  /* border-color: #a4a4a4; */
+}
+
+.check-input::placeholder {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.check-gender {
+  margin-top: 31.5px;
+  margin-bottom: 33px;
+  color: #000;
+  font-size: 11px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.check-info {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-family: Lato;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.reg-button {
+  color: #fff;
+  font-size: 14px;
+  font-family: Lato;
+  background-color: #f16d7f;
+  padding: 16px 29px;
+  border: none;
+  margin-bottom: 96px;
+}
+
+.reg-svg {
+  margin-left: 20px;
+}
+
+.registration-info {
+  padding-top: 64px;
+}
+
+.reg-info {
+  color: #000;
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+
+.reg-text {
+  color: #000;
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+
+.reg-list-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.reg-list-text {
+  color: #000;
+  font-size: 24px;
+  font-family: Lato;
+  font-weight: 300;
+}
+
+.list-svg {
+  margin-right: 23px;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .center {
     padding-left: calc(50% - 376px);
