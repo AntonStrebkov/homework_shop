@@ -424,9 +424,9 @@ img {
     ),
     url(img/background-image.png);
   background-size: cover;
-
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: bottom;
+  /* background-attachment: fixed; */
 }
 
 .subscribe-flex {
@@ -616,7 +616,8 @@ img {
 
   .subscribe {
     padding-bottom: 160px;
-    background-size: cover;
+    /* background-size: cover; */
+    background-position: left;
   }
 
   .subscribe-flex {
@@ -682,6 +683,10 @@ img {
 
   .service-cards {
     flex-direction: column;
+  }
+
+  .subscribe {
+    background-position: left;
   }
 
   .subscribe-flex {
