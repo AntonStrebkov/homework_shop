@@ -1,5 +1,5 @@
 # homework_shop
-## Учебный проект про верстке
+## Учебный проект по верстке
 ![image](https://github.com/AntonStrebkov/homework_shop/assets/109229138/f77d5b3d-35f9-4855-9f72-73006d1bb90c)
 ![image](https://github.com/AntonStrebkov/homework_shop/assets/109229138/22c857d1-c56a-439c-8fd2-6f8043ee326f)
 ![image](https://github.com/AntonStrebkov/homework_shop/assets/109229138/aa47ee5e-be78-47a8-91e8-572ba47152f6)
