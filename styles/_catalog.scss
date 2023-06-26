@@ -44,19 +44,27 @@ summary::-webkit-details-marker {
 .filter-sort {
   height: 132px;
   position: relative;
+  display: flex;
+  gap: 16px;
+  padding-top: 39px;
+  box-sizing: border-box;
 }
 
 .filter {
-  position: absolute;
-  padding: 13px 16px 16px;
-  top: 39px;
+  position: relative;
+  padding-top: 13px;
   box-sizing: border-box;
   width: 360px;
   &[open] {
     background: #fff;
     box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    z-index: 1;
   }
 
+  &__content {
+    background-color: #fff;
+    padding: 0 16px 16px;
+  }
   &[open] &__heading {
     color: $colorSite;
   }
@@ -68,6 +76,7 @@ summary::-webkit-details-marker {
     display: flex;
     align-items: center;
     gap: 11px;
+    padding-left: 16px;
   }
   &__heading {
     color: #000;
@@ -109,6 +118,50 @@ summary::-webkit-details-marker {
   }
 }
 
+.sort {
+  padding-top: 12px;
+  display: flex;
+  gap: 18px;
+
+  &__details {
+    position: relative;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__heading {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6f6e6e;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    left: -9px;
+    top: 22px;
+    padding: 7px 30px 11px 9px;
+    background: #fff;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  }
+  &__check {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #6f6e6e;
+  }
+}
 .catalog-product__box {
   display: flex;
   flex-wrap: wrap;
