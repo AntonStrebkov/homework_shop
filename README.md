@@ -9,3 +9,5 @@
 ![image](https://github.com/AntonStrebkov/homework_shop/assets/109229138/1c829969-ae5e-461c-9f58-153b45a3d295)
 ## Мобильная версия:
 ![image](https://github.com/AntonStrebkov/homework_shop/assets/109229138/d1877704-cd84-49ac-a2ca-b681bde03eeb)
+## Фильтр, сортировка и бургер-меню
+![image](https://github.com/AntonStrebkov/homework_shop/assets/109229138/c5a23c62-b500-40cd-ad59-4911c578f3ec)
