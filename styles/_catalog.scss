@@ -23,10 +23,23 @@ summary::-webkit-details-marker {
   }
 
   &__breadcrumbs {
-    display: flex;
-    gap: 10px;
     padding-top: 65px;
     padding-bottom: 65px;
+
+    & &__item:not(:last-child)::after {
+      display: inline-block;
+      margin: 0 5px;
+      content: "/";
+      color: #636363;
+    }
+  }
+
+  &__box {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
 
   &__link {
@@ -125,6 +138,7 @@ summary::-webkit-details-marker {
 
   &__details {
     position: relative;
+    z-index: 10;
   }
 
   &__summary {

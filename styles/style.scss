@@ -510,7 +510,6 @@ img {
   border-radius: 25px 0 0 25px;
   padding-left: 20px;
   padding-right: 20px;
-  border: none;
 }
 
 .input-email::placeholder {
@@ -540,8 +539,8 @@ img {
 
 .footer {
   background-color: #000000;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .footer-flex {
@@ -565,6 +564,7 @@ img {
   padding: 9px 11px;
   align-items: center;
   margin-right: 7px;
+  box-sizing: border-box;
 }
 
 .footer-icon:hover {
@@ -619,6 +619,7 @@ img {
   font-size: 13px;
   font-family: Lato;
   font-weight: 300;
+  border: none;
 }
 
 .check-gender {
@@ -841,16 +842,14 @@ img {
   .catalog-head {
     flex-direction: column;
     align-items: center;
-  }
-
-  .catalog-head__title {
-    padding-top: 24px;
-    padding-bottom: 32px;
-  }
-
-  .catalog-head__breadcrumbs {
-    padding-top: 0;
-    padding-bottom: 46px;
+    &__title {
+      padding-top: 24px;
+      padding-bottom: 32px;
+    }
+    &__breadcrumbs {
+      padding-top: 0;
+      padding-bottom: 46px;
+    }
   }
 
   .filter {
@@ -886,4 +885,184 @@ img {
   .reg-button {
     margin-bottom: 40px;
   }
+}
+
+.cart {
+  padding-top: 96px;
+  display: flex;
+  gap: 128px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    box-shadow: 17px 19px 24px 0px #00000021;
+  }
+  &__image {
+    width: 262px;
+  }
+  &__info {
+    padding-top: 22px;
+    padding-left: 31px;
+    width: 390px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__heading {
+    margin-bottom: 46px;
+    color: #222;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  &__close {
+    border-color: #fff;
+    border: none;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  &__text {
+    color: #575757;
+    font-size: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    &__unique {
+      color: #ef5b70;
+    }
+  }
+  &__quantity {
+    display: flex;
+    gap: 24px;
+    &__number {
+      box-sizing: border-box;
+      width: 44px;
+      padding-left: 16px;
+      padding-right: 8px;
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 28px;
+    right: 22px;
+    &:hover path {
+      fill: #ef5b70;
+    }
+  }
+  &__buttons {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+    &__button {
+      color: #000;
+      font-size: 14px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 17px;
+      background: #ffffff;
+      border: 1px solid #a4a4a4;
+      padding: 16px 40px;
+    }
+  }
+}
+
+.cart-right {
+  max-width: 380px;
+}
+.cart-form {
+  margin-bottom: 57px;
+  &__heading {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 21px;
+  }
+  &__button {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 13px;
+    padding: 10px 15px;
+    border: 1px solid #a4a4a4;
+    background-color: #fff;
+  }
+}
+
+.checkout {
+  background-color: #f5f3f3;
+  padding: 39px 44px 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__subtotal {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 30px;
+  }
+  &__grandtotal {
+    display: flex;
+    gap: 30px;
+    color: #222;
+    font-size: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+
+    &__span {
+      color: #f16d7f;
+      font-weight: 700;
+    }
+  }
+  &__border {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 21px;
+    padding-top: 17px;
+  }
+  &__button {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #a4a4a4;
+    font-size: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    padding: 16px 43px;
+  }
+}
+
+.only-cart-button:hover {
+  transition: 0.3s;
+  color: #fff;
+  background-color: #f16d7f;
+  border: 1px solid #f16d7f;
 }
