@@ -96,6 +96,9 @@ summary::-webkit-details-marker {
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
+    &_svg {
+      display: none;
+    }
   }
 
   &__item {
