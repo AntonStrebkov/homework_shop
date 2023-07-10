@@ -138,10 +138,12 @@ summary::-webkit-details-marker {
   padding-top: 12px;
   display: flex;
   gap: 18px;
+  flex-shrink: 0;
 
   &__details {
     position: relative;
     z-index: 10;
+    flex-shrink: 0;
   }
 
   &__summary {
